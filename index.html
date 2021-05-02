@@ -10,7 +10,7 @@
         #adjusted-sheriff {
             position: relative;
             top: 130em;
-            left: 20em;
+            left: 10em;
             width: 10em;
             z-index: 5;
         }
@@ -19,14 +19,14 @@
             position: relative;
             width: 8em;
             top: 100em;
-            left: 30em;
+            left: 10em;
             z-index: 5;
         }
         
         #ranger {
             position: relative;
             top: 90em;
-            left: 20em;
+            left: 10em;
             width: 10em;
             z-index: 5;
         }
@@ -34,7 +34,7 @@
         #outlaw {
             position: relative;
             top: 10em;
-            left: 70em;
+            left: 50em;
             width: 8em;
             top: 100em;
             z-index: 5;
@@ -52,6 +52,7 @@
             position: relative;
             z-index: 5;
             top: -30em;
+            left: 30em;
         }
         
         #town {
@@ -71,6 +72,37 @@
         
         footer {
             height: 100em;
+        }
+        
+        @media (max-width:444px) {
+            #landscape {
+                position: relative;
+                width: 100%;
+                z-index: 0;
+                max-width: 1024px;
+            }
+            #trailer {
+                max-width: 28em;
+                position: relative;
+                z-index: 5;
+                top: -30em;
+            }
+            #town {
+                position: relative;
+                left: 0em;
+                top: 29em;
+                z-index: 2;
+                width: 600px;
+            }
+            body {
+                background-color: rgb(233, 233, 156);
+                display: grid;
+                max-width: 400px;
+            }
+            #outlaw {
+                width: 7em;
+                top: 94em;
+            }
         }
     </style>
 </head>
