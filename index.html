@@ -8,21 +8,62 @@
     <title>SVG Filters Diving deeper</title>
     <style>
         #adjusted-sheriff {
-            width: 20em;
+            position: relative;
+            top: 130em;
+            left: 20em;
+            width: 10em;
+            z-index: 5;
         }
         
         #sheriff {
-            width: 18em;
+            position: relative;
+            width: 8em;
+            top: 100em;
+            left: 50em;
+            z-index: 5;
         }
         
         #ranger {
-            width: 20em;
+            position: relative;
+            top: 90em;
+            left: 30em;
+            width: 10em;
+            z-index: 5;
+        }
+        
+        #outlaw {
+            position: relative;
+            top: 10em;
+            left: 70em;
+            width: 8em;
+            top: 100em;
+            z-index: 5;
+        }
+        
+        #landscape {
+            position: relative;
+            width: 100%;
+            z-index: 0;
+        }
+        
+        #trailer {
+            width: 25em;
+            position: relative;
+            top: -80em;
+            z-index: 5;
+        }
+        
+        #town {
+            position: relative;
+            left: 10em;
+            top: 29em;
+            width: 95vw;
+            z-index: 2;
         }
         
         body {
-            background-color: blue;
+            background-color: rgb(233, 233, 156);
             display: grid;
-            grid-template-columns: 1fr 1fr;
         }
     </style>
 </head>
@@ -32,7 +73,7 @@
     <defs>
         <style>
             .cls-1{fill: black;}/* #876340*/
-            .cls-2{fill: #fff;}/* #231f20*/
+            .cls-2{fill: #fff; stroke: black;}/* #231f20*/
             .cls-10,.cls-13,.cls-3,
             .cls-4{fill:none;stroke-miterlimit:10;}
             .cls-3,
@@ -49,6 +90,7 @@
             .cls-12 {fill:#303d5f;}
             .cls-13 {stroke:#876340;stroke-width:0.86px;}
             .cls-15 { stroke: green; fill: green;}
+            .cls-16 { stroke:beige; fill: beige ;}
         </style>
     </defs>
     <g id="Layer_2" 
@@ -75,7 +117,7 @@
             <path class="cls-7" d="M43.55,0h22a0,0,0,0,1,0,0V24.58a11,11,0,0,1-11,11h0a11,11,0,0,1-11-11V0A0,0,0,0,1,43.55,0Z" transform="translate(109.06 35.56) rotate(-180)"/>
             <rect class="cls-6" x="43.55" y="29.88" width="21.96" height="2.45" transform="translate(109.06 62.22) rotate(-180)"/>
            
-            <rect class="cls-8" x="43.55" y="35.56" width="21.96" height="14.14" transform="translate(109.06 85.26) rotate(-180)"/>
+            <rect class="cls-16" x="43.55" y="35.56" width="21.96" height="14.14" transform="translate(109.06 85.26) rotate(-180)"/>
             <rect class="cls-1" x="43.55" y="35.56" width="21.96" height="1.76" transform="translate(109.06 72.88) rotate(-180)"/>
             <polygon class="cls-9" points="44.64 97.83 65.6 97.83 96.93 49.7 13.31 49.7 44.64 97.83"/>
             <line class="cls-10" x1="71.2" y1="103.41" x2="34.37" y2="103.41"/>
@@ -215,7 +257,10 @@
         </g>
     </svg>
 
-
+    <img id="outlaw" src="svg/Asset 101.svg">
+    <img id="town" src="svg/Asset 95.svg">
+    <img id="landscape" src="svg/Asset 94.svg">
+    <img id="trailer" src="svg/Asset 98.svg">
 </body>
 
 </html>
